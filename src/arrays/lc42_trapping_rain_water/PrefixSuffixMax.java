@@ -1,30 +1,19 @@
 package arrays.lc42_trapping_rain_water;
 
 public class PrefixSuffixMax {
-    public static int trappedRainWater(int[] height) {
-        int n = height.length;
+    public class prefixsum {
 
-        int[] leftMax = new int[n];
-        leftMax[0] = height[0];
-        for (int i = 1; i < n; i++) {
-            leftMax[i] = Math.max(height[i], leftMax[i - 1]);
-        }
+        public static void main(String[] args) {
+            int[] arr = {10, 20, -5, -7, -3, 2, 1, 20};
+            int[] prefix = new int[arr.length];
+            prefix[0] = arr[0];
+            for (int i = 1; i < arr.length; i++) {
+                prefix[i] = prefix[i - 1] + arr[i];
+            }System.out.print("Prefix Sum Array: ");
 
-        int[] rightMax = new int[n];
-        rightMax[n - 1] = height[n - 1];
-        for (int i = n - 2; i >= 0; i--) {
-            rightMax[i] = Math.max(height[i], rightMax[i + 1]);
+            for (int num : prefix) {
+                System.out.print(num + " ");
+            }
         }
-
-        int trappedWater = 0;
-        for (int i = 0; i < n; i++) {
-            int waterLevel = Math.min(leftMax[i], rightMax[i]);
-            trappedWater += waterLevel - height[i];
-        }
-        return trappedWater;
-    }
-    public static void main(String[] args){
-        int[] height = {4, 2, 0, 6, 3, 2, 5};
-        System.out.println(trappedRainWater(height));
     }
 }
