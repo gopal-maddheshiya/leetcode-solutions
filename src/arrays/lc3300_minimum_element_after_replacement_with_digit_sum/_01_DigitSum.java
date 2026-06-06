@@ -1,6 +1,6 @@
 package arrays.lc3300_minimum_element_after_replacement_with_digit_sum;
 
-public class DigitSum {
+public class _01_DigitSum {
     public static int digitSum(int[] nums){
         int min = Integer.MAX_VALUE;
         for(int num : nums){

@@ -2,7 +2,7 @@ package strings.lc3121_count_the_number_of_special_characters_ii;
 
 import java.util.Arrays;
 
-public class OptimalArray {
+public class _02_OptimalArray {
     public static int specialCharacter(String word) {
         int[] lastLower = new int[26];
         int[] firstUpper = new int[26];

@@ -1,6 +1,6 @@
 package arrays.lc169_majority_element;
 
-public class BruteForce {
+public class _01_BruteForce {
     public static int MajorityElementBruteForce(int[] numbs) {
         int n = numbs.length;
         for (int val : numbs) {

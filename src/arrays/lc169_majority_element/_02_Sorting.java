@@ -2,7 +2,7 @@ package arrays.lc169_majority_element;
 
 import java.util.Arrays;
 
-public class Sorting {
+public class _02_Sorting {
 
     public static int MajorityElementOptimize(int[] numbs) {
         Arrays.sort(numbs);

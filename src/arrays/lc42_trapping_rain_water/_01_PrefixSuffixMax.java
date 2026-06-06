@@ -1,6 +1,6 @@
 package arrays.lc42_trapping_rain_water;
 
-public class PrefixSuffixMax {
+public class _01_PrefixSuffixMax {
     public class prefixsum {
 
         public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package arrays.lc169_majority_element;
 
-public class MooreVoting {
+public class _03_MooreVoting {
     public static int MajorityElementByMooreAlgo(int[] numbs){
     int freq = 0;
     int ans = 0;

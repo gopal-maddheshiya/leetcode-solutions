@@ -1,6 +1,6 @@
 package strings.lc3121_count_the_number_of_special_characters_ii;
 
-public class BruteForce {
+public class _01_BruteForce {
     public static int specialCharacter(String word){
 
         int count = 0;
