@@ -1,6 +1,6 @@
 package arrays.lc136_single_number;
 
-public class XOR {
+public class _01_XOR {
     public static int singleNumber(int[] nums) {
         int ans = 0;
 
