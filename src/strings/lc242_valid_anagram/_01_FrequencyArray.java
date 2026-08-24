@@ -1,4 +1,4 @@
-package arrays.lc242_valid_anagram;
+package strings.lc242_valid_anagram;
 
 public class _01_FrequencyArray {
     public static boolean isAnagram(String s, String t){
